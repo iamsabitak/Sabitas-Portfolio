@@ -1,15 +1,13 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HeaderMenu } from "./components/HeaderMenu";
 import Home from "./components/Home";
+import { Fragment } from "react/jsx-runtime";
 
 const App = () => {
   return (
-    <Router>
+    <Fragment>
       <HeaderMenu />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </Router>
+      <Home />
+    </Fragment>
   );
 };
 
