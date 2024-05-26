@@ -1,9 +1,15 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { HeaderMenu } from "./components/HeaderMenu";
+import Home from "./components/Home";
+
 const App = () => {
   return (
-    <div>
+    <Router>
       <HeaderMenu />
-    </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
   );
 };
 
