@@ -33,7 +33,7 @@ const Home = () => {
         </Title>
       </Center>
 
-      <Flex justify={"center"} gap={70} align={"center"} mt={70}>
+      <Flex justify={"center"} gap={70} align={"center"} mt={55}>
         <Flex
           pt={35}
           direction={"column"}
@@ -124,9 +124,15 @@ const Home = () => {
           </Box>
           <Flex gap={"1rem"} align={"center"} p={15}>
             <Text fz={30} c="#12F7D6">
-              let’s talk
+              let's talk
             </Text>
-            <IconMail color="#12F7D6" />
+            <Box
+              bg={"#43454D"}
+              p={"6px 7px 0px 7px"}
+              style={{ borderRadius: "50rem", cursor: "pointer" }}
+            >
+              <IconMail color="#12F7D6" />
+            </Box>
           </Flex>
         </Flex>
         <Flex
