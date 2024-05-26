@@ -28,12 +28,12 @@ const Home = () => {
       style={{ fontFamily: "monospace" }}
     >
       <Center>
-        <Title style={{ fontFamily: "monospace" }} c={"12F7D6"} fz={48}>
+        <Title style={{ fontFamily: "monospace" }} c={"#98FAEC"} fz={48}>
           Frontend Developer
         </Title>
       </Center>
 
-      <Flex justify={"center"} gap={70} align={"center"} mt={40}>
+      <Flex justify={"center"} gap={70} align={"center"} mt={70}>
         <Flex
           pt={35}
           direction={"column"}
@@ -43,7 +43,7 @@ const Home = () => {
             border: "4px solid #FFFFFF",
             borderTopLeftRadius: "10rem",
             borderBottomRightRadius: "10rem",
-            boxShadow: "-4px -4px 4px #12F7D6",
+            boxShadow: "-4px -4px 4px #98FAEC",
           }}
           p={"lg"}
         >
@@ -52,7 +52,6 @@ const Home = () => {
             alt="it's me"
             w={120}
             h={120}
-            // style={{ boxShadow: "0 4px 38px 0 rgba(0, 0, 0, 0.25)" }}
             style={{ border: "2px solid #12F7D6" }}
           />
           <Box>
@@ -117,8 +116,8 @@ const Home = () => {
           <Box p={15}>
             <Text c={"#98FAEC"}> {"<p>"}</Text>
             <Text fz={16} p={4}>
-              I help business grow by crafting amazing web experiences. If
-              you’re looking for a developer that likes to get stuff done,
+              I help businesses grow by creating exceptional web experiences. If
+              you're looking for a developer who gets results, let's connect.
             </Text>
 
             <Text c={"#98FAEC"}>{"<p/>"} </Text>
@@ -134,19 +133,28 @@ const Home = () => {
           direction={"column"}
           bg={"#1A1E23"}
           w={250}
+          h={400}
           style={{
-            // border: "2px solid #12F7D6",
             borderRadius: "6rem",
           }}
-          p={"lg"}
+          p={40}
         >
-          <p>
-            {" "}
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            voluptatibus alias distinctio molestiae suscipit? Illum quidem,
-            explicabo facere totam maiores obcaecati! Quos fugit voluptas
-            pariatur commodi quasi, iusto ipsum ipsa.
-          </p>
+          <Flex pt={40} gap={20} align={"center"}>
+            <Title c={"#12F7D6"}>2</Title>
+            <Text>Programming Languages</Text>
+          </Flex>
+          <Flex pt={20} gap={20} align={"center"}>
+            <Title c={"#12F7D6"}>1</Title>
+            <Text>Development Tools</Text>
+          </Flex>{" "}
+          <Flex pt={20} gap={20} align={"center"}>
+            <Title c={"#12F7D6"}>0</Title>
+            <Text>Years of Experience</Text>
+          </Flex>
+          <Flex pt={20} gap={20} align={"center"}>
+            <Title c={"#12F7D6"}>1</Title>
+            <Text>Frameworks</Text>
+          </Flex>
         </Flex>
       </Flex>
     </Flex>
