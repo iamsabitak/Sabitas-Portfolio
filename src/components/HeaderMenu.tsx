@@ -1,4 +1,13 @@
-import { Group, Burger, Flex, Box, Anchor, Title, Text } from "@mantine/core";
+import {
+  Group,
+  Burger,
+  Flex,
+  Box,
+  Anchor,
+  Title,
+  Text,
+  Divider,
+} from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 const links = [
@@ -12,11 +21,23 @@ export function HeaderMenu() {
   const [opened, { toggle }] = useDisclosure(false);
 
   return (
-    <header>
-      <Box c={"#FFFFFF"} bg={"#292F36"} size="md" p={"1.5rem 6rem 1rem 6rem"}>
+    <Flex direction={"column"} c={"#FFFFFF"} bg={"#292F36"}>
+      <Box
+        c={"#FFFFFF"}
+        bg={"#292F36"}
+        style={{ fontFamily: "monospace" }}
+        size="md"
+        p={"1.5rem 6rem 0.6rem 6rem"}
+      >
         <Flex justify={"space-between"}>
-          <Title style={{ fontFamily: "fantasy" }}>SabitaKhadka</Title>
-          <Group gap="2rem" visibleFrom="sm" h="100%">
+          <Title style={{ fontFamily: "monospace" }}>
+            {" "}
+            <Text fz={32} c={"#12F7D6"} fw={900} span>
+              {"<C/>"}
+            </Text>{" "}
+            SabitaKhadka
+          </Title>
+          <Group justify="center" gap="2rem" visibleFrom="sm" h="100%">
             {links.map((link) => (
               <Anchor
                 key={link.label}
@@ -27,7 +48,7 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text fw={550} fz={18}>
+                <Text pt={5} fw={550} fz={19}>
                   {link.label}
                 </Text>
               </Anchor>
@@ -42,6 +63,7 @@ export function HeaderMenu() {
           />
         </Flex>
       </Box>
-    </header>
+      <Divider />
+    </Flex>
   );
 }
