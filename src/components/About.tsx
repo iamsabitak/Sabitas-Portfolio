@@ -40,7 +40,12 @@ const About: React.FC = () => {
             >
               About Me
             </Title>
-            <Box bg={"#292F36"} mt={60} p={35} style={{ borderRadius: "40px" }}>
+            <Box
+              bg={"#292F36"}
+              mt={60}
+              p={"25px 35px 25px 35px"}
+              style={{ borderRadius: "40px" }}
+            >
               <Text c={"#98FAEC"} pb={14}>
                 {" "}
                 {"<p>"}
@@ -49,7 +54,7 @@ const About: React.FC = () => {
                 Hello !
               </Title>
               <Text fz={16} pt={4}>
-                My name is Sinan and I specialize in web developement that
+                My name is Sabita and I specialize in web developement that
                 utilizes HTML, CSS, JS, and{" "}
                 <Text span inherit c={"#12F7D6"}>
                   REACT
@@ -59,15 +64,12 @@ const About: React.FC = () => {
               <Text fz={16}>
                 I am a highly motivated individual and eternal optimist
                 dedicated to writing clear, concise, robust code that works.
-                Striving to never stop learning and improving. When I'm not
-                coding, I am{" "}
-                <Text span inherit c={"#12F7D6"}>
-                  writing bolgs
-                </Text>
-                , reading, or picking up some new hands-on art project like
-                <Text span inherit c={"#12F7D6"}>
-                  {" "}
-                  photography.
+                Striving to never stop learning and improving. <br /> When I'm
+                not coding, I immersed in the captivating stories of kdramas and
+                anime, lost in the pages of thrilling novels, or {""}
+                <Text span c={"#12F7D6"}>
+                  diving into the endless possibilities of coding, where each
+                  line is a chance to create something extraordinary.
                 </Text>
                 <Text fz={16}>
                   I like to have my perspective and belief systems challenged so
