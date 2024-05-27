@@ -1,3 +1,4 @@
+import About from "./components/About";
 import { HeaderMenu } from "./components/HeaderMenu";
 import Home from "./components/Home";
 import { Fragment } from "react/jsx-runtime";
@@ -7,6 +8,7 @@ const App = () => {
     <Fragment>
       <HeaderMenu />
       <Home />
+      <About/>
     </Fragment>
   );
 };
