@@ -24,7 +24,7 @@ const About: React.FC = () => {
         <Center>
           <Image src={Scroll} alt="scroll" w={34} h={124} mt={60} mb={60} />
         </Center>
-        <Flex p={"1.5rem 10rem 0.6rem 10rem"} gap={80} pt={70}>
+        <Flex p={"1.5rem 10rem 3rem 10rem"} gap={80} pt={70}>
           <Box>
             <Title
               style={{
