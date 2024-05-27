@@ -1,13 +1,4 @@
-import {
-  Group,
-  Burger,
-  Flex,
-  Box,
-  Anchor,
-  Title,
-  Text,
-  Divider,
-} from "@mantine/core";
+import { Group, Burger, Flex, Box, Title, Text, Divider } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
 const links = [
@@ -39,10 +30,9 @@ export function HeaderMenu() {
           </Title>
           <Group justify="center" gap="2rem" visibleFrom="sm" h="100%">
             {links.map((link) => (
-              <Anchor
+              <Box
                 key={link.label}
                 c={"#FFFFFF"}
-                href={link.link}
                 style={{
                   textDecoration: "none",
                 }}
@@ -51,7 +41,7 @@ export function HeaderMenu() {
                 <Text pt={5} fw={550} fz={19}>
                   {link.label}
                 </Text>
-              </Anchor>
+              </Box>
             ))}
           </Group>
           <Burger
