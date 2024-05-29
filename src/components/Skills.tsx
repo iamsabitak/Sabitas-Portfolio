@@ -39,11 +39,11 @@ const Skills: React.FC = () => {
               <Text>Advance</Text>
             </Flex>
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
+              mb={20}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -51,7 +51,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
@@ -60,11 +60,11 @@ const Skills: React.FC = () => {
               <Text>Advance</Text>
             </Flex>
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
+               mb={20}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -72,7 +72,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
@@ -81,11 +81,11 @@ const Skills: React.FC = () => {
               <Text>Regular</Text>
             </Flex>{" "}
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
+               mb={20}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -93,7 +93,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
@@ -102,11 +102,11 @@ const Skills: React.FC = () => {
               <Text>Regular</Text>
             </Flex>
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
+               mb={20}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -114,7 +114,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
@@ -123,11 +123,11 @@ const Skills: React.FC = () => {
               <Text>Regular</Text>
             </Flex>
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
+               mb={20}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -135,7 +135,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
@@ -144,11 +144,10 @@ const Skills: React.FC = () => {
               <Text>Beginner</Text>
             </Flex>
             <Box
-              mt={8}
-              mb={15}
+              mt={4}
               w={"100%"}
               bg={"grey"}
-              h={17}
+              h={14}
               style={{ borderRadius: "20px" }}
             >
               <Box
@@ -156,7 +155,7 @@ const Skills: React.FC = () => {
                 bg={
                   "linear-gradient(90deg, rgba(18,247,214,1) 8%, rgba(152,250,236,1) 100%)"
                 }
-                h={17}
+                h={14}
                 style={{ borderRadius: "20px" }}
               ></Box>
             </Box>
