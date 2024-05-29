@@ -1,13 +1,6 @@
 import { Group, Burger, Flex, Box, Title, Text, Divider } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 
-const links = [
-  { link: "/home", label: "Home" },
-  { link: "/about", label: "About" },
-  { link: "/projects", label: "Projects" },
-  { link: "/contact", label: "Contact" },
-];
-
 export function HeaderMenu() {
   const [opened, { toggle }] = useDisclosure(false);
 
@@ -29,20 +22,61 @@ export function HeaderMenu() {
             SabitaKhadka
           </Title>
           <Group justify="center" gap="2rem" visibleFrom="sm" h="100%">
-            {links.map((link) => (
-              <Box
-                key={link.label}
-                c={"#FFFFFF"}
-                style={{
-                  textDecoration: "none",
-                }}
-                onClick={(event) => event.preventDefault()}
-              >
-                <Text pt={5} fw={550} fz={19}>
-                  {link.label}
-                </Text>
-              </Box>
-            ))}
+            <Box
+              c={"#FFFFFF"}
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={(event) => event.preventDefault()}
+            >
+              <Text pt={5} fw={550} fz={19}>
+                Home
+              </Text>
+            </Box>
+            <Box
+              c={"#FFFFFF"}
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={(event) => event.preventDefault()}
+            >
+              <Text pt={5} fw={550} fz={19}>
+                About
+              </Text>
+            </Box>{" "}
+            <Box
+              c={"#FFFFFF"}
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={(event) => event.preventDefault()}
+            >
+              <Text pt={5} fw={550} fz={19}>
+                Skills
+              </Text>
+            </Box>{" "}
+            <Box
+              c={"#FFFFFF"}
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={(event) => event.preventDefault()}
+            >
+              <Text pt={5} fw={550} fz={19}>
+                Project
+              </Text>
+            </Box>
+            <Box
+              c={"#FFFFFF"}
+              style={{
+                textDecoration: "none",
+              }}
+              onClick={(event) => event.preventDefault()}
+            >
+              <Text pt={5} fw={550} fz={19}>
+                Contact
+              </Text>
+            </Box>
           </Group>
           <Burger
             color={"#FFFFFF"}
