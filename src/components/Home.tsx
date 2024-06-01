@@ -16,7 +16,7 @@ import {
   IconMapPin,
 } from "@tabler/icons-react";
 
-import SabitaResume from "../assets/Sabita Resume Doc-2.pdf";
+import SabitaResume from "../assets/Sabita Resume Doc.pdf";
 
 const Home = () => {
   return (
