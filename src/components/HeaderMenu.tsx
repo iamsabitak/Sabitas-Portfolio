@@ -4,6 +4,8 @@ import { Fragment } from "react/jsx-runtime";
 import Home from "./Home";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 export function HeaderMenu() {
   const [opened, { toggle }] = useDisclosure(false);
@@ -16,6 +18,14 @@ export function HeaderMenu() {
       offset: 60,
     });
   const { scrollIntoView: scrollIntoSkills, targetRef: targetRefSkill } =
+    useScrollIntoView<HTMLDivElement>({
+      offset: 60,
+    });
+  const { scrollIntoView: scrollIntoProjects, targetRef: targetRefProjects } =
+    useScrollIntoView<HTMLDivElement>({
+      offset: 60,
+    });
+  const { scrollIntoView: scrollIntoContact, targetRef: targetRefContact } =
     useScrollIntoView<HTMLDivElement>({
       offset: 60,
     });
@@ -109,7 +119,12 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
+                <Text
+                  pt={5}
+                  fw={550}
+                  fz={19}
+                  onClick={() => scrollIntoProjects()}
+                >
                   Project
                 </Text>
               </Box>
@@ -121,7 +136,12 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
+                <Text
+                  pt={5}
+                  fw={550}
+                  fz={19}
+                  onClick={() => scrollIntoContact()}
+                >
                   Contact
                 </Text>
               </Box>
@@ -147,6 +167,14 @@ export function HeaderMenu() {
       <Box ref={targetRefSkill}>
         {" "}
         <Skills />
+      </Box>
+      <Box ref={targetRefProjects}>
+        {" "}
+        <Projects />
+      </Box>
+      <Box ref={targetRefContact}>
+        {" "}
+        <Contact />
       </Box>
     </Fragment>
   );
