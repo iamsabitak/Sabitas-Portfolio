@@ -59,16 +59,7 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text
-                  pt={5}
-                  fw={550}
-                  fz={19}
-                  onClick={() =>
-                    scrollIntoHome({
-                      alignment: "center",
-                    })
-                  }
-                >
+                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
                   Home
                 </Text>
               </Box>
@@ -105,11 +96,7 @@ export function HeaderMenu() {
                   pt={5}
                   fw={550}
                   fz={19}
-                  onClick={() =>
-                    scrollIntoSkills({
-                      alignment: "center",
-                    })
-                  }
+                  onClick={() => scrollIntoSkills()}
                 >
                   Skills
                 </Text>
@@ -122,16 +109,7 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text
-                  pt={5}
-                  fw={550}
-                  fz={19}
-                  onClick={() =>
-                    scrollIntoHome({
-                      alignment: "center",
-                    })
-                  }
-                >
+                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
                   Project
                 </Text>
               </Box>
@@ -143,16 +121,7 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text
-                  pt={5}
-                  fw={550}
-                  fz={19}
-                  onClick={() =>
-                    scrollIntoHome({
-                      alignment: "center",
-                    })
-                  }
-                >
+                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
                   Contact
                 </Text>
               </Box>
