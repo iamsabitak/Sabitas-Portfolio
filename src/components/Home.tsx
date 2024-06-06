@@ -26,6 +26,7 @@ const Home = () => {
       bg={"#292F36"}
       c={"#FFFFFF"}
       style={{ fontFamily: "monospace" }}
+      mt={70}
     >
       <Center>
         <Title style={{ fontFamily: "monospace" }} c={"#98FAEC"} fz={48}>
