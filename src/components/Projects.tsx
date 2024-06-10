@@ -121,12 +121,12 @@ const Projects: React.FC = () => {
                 style={{
                   textAlign: "center",
                 }}
-                c={"#12F7D6"}
+                c={"#98FAEC"}
               >
                 {currentCard.title}
               </Title>
 
-              <Text size="sm" c="#ffffff">
+              <Text size="sm" c={"#ffffff"}>
                 {currentCard.description}
               </Text>
 
@@ -137,7 +137,7 @@ const Projects: React.FC = () => {
                   cursor: "pointer",
                   textAlign: "center",
                 }}
-                c={"#12F7D6"}
+                c={"#98FAEC"}
               >
                 View Website
               </Box>
