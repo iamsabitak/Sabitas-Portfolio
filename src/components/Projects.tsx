@@ -121,14 +121,16 @@ const Projects: React.FC = () => {
                 style={{
                   textAlign: "center",
                 }}
-                c={"#98FAEC"}
+                c={"#ffffff"}
               >
                 {currentCard.title}
               </Title>
 
-              <Text size="sm" c={"#ffffff"}>
-                {currentCard.description}
-              </Text>
+              <Box size={"sm"}>
+                <Text c={"#98FAEC"}>{"<h>"} </Text>
+                <Text c={"#ffffff"}> {currentCard.description}</Text>
+                <Text c={"#98FAEC"}>{"</h>"} </Text>
+              </Box>
 
               <Box
                 pt={8}
