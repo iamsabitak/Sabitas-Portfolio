@@ -69,7 +69,12 @@ export function HeaderMenu() {
                 }}
                 onClick={(event) => event.preventDefault()}
               >
-                <Text pt={5} fw={550} fz={19} onClick={() => scrollIntoHome()}>
+                <Text
+                  pt={5}
+                  fw={550}
+                  fz={19}
+                  onClick={() => scrollIntoHome({ alignment: "center" })}
+                >
                   Home
                 </Text>
               </Box>
@@ -106,7 +111,7 @@ export function HeaderMenu() {
                   pt={5}
                   fw={550}
                   fz={19}
-                  onClick={() => scrollIntoSkills()}
+                  onClick={() => scrollIntoSkills({ alignment: "center" })}
                 >
                   Skills
                 </Text>
@@ -123,7 +128,7 @@ export function HeaderMenu() {
                   pt={5}
                   fw={550}
                   fz={19}
-                  onClick={() => scrollIntoProjects()}
+                  onClick={() => scrollIntoProjects({ alignment: "center" })}
                 >
                   Project
                 </Text>
@@ -140,7 +145,7 @@ export function HeaderMenu() {
                   pt={5}
                   fw={550}
                   fz={19}
-                  onClick={() => scrollIntoContact()}
+                  onClick={() => scrollIntoContact({ alignment: "center" })}
                 >
                   Contact
                 </Text>
