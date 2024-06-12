@@ -13,13 +13,18 @@ import ProjectsBgImg from "../assets/Works.svg";
 import Scroll from "../assets/Scroll.svg";
 import React, { useState } from "react";
 import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
+import Timer from "../assets/Screenshot 2024-06-12 at 11.50.52 AM.png";
+import TravelList from "../assets/Screenshot 2024-06-12 at 11.51.33 AM.png";
+import EatnSplit from "../assets/Screenshot 2024-06-12 at 11.52.03 AM.png";
+import ForeCastify from "../assets/Screenshot 2024-06-12 at 11.52.23 AM.png";
+import FastReactPizza from "../assets/Screenshot 2024-06-12 at 11.53.02 AM.png";
+import PopcornPicks from "../assets/Screenshot 2024-06-12 at 12.00.19 PM.png";
 
 const cardData = [
   {
     id: 1,
     title: "Travel List",
-    image:
-      "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
+    image: TravelList,
     description:
       "React Travel Packing List: Organize items by input, description, or packed status. Streamline travel preparation with ease and efficiency.",
     demolink:
@@ -28,7 +33,7 @@ const cardData = [
   {
     id: 2,
     title: "Eat-n-split",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
+    image: EatnSplit,
     description:
       "React-powered Eat and Split app: Easily split bills, track expenses, and manage shared costs effortlessly with friends.",
     demolink: "https://zingy-arithmetic-fbd779.netlify.app/?",
@@ -36,7 +41,7 @@ const cardData = [
   {
     id: 3,
     title: "ForeCastify",
-    image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
+    image: ForeCastify,
     description:
       "A simple weather application built with React that enables users to check the weather forecast for specific locations.s",
     demolink:
@@ -44,17 +49,17 @@ const cardData = [
   },
   {
     id: 4,
-    title: "FlickPicks",
-    image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
+    title: "PopcornPicks",
+    image: PopcornPicks,
     description:
-      "Discover films matching your taste with FlickPicks, a React app for movie recommendations, details, and saving favorites.",
+      "Discover films matching your taste with PopcornPicks, a React app for movie recommendations, details, and saving favorites.",
     demolink:
-      "https://6596cebd993dc500728433ac--endearing-snickerdoodle-21afbe.netlify.app",
+      "https://66694138c13bd6749286971b--gilded-marzipan-482e20.netlify.app/",
   },
   {
     id: 5,
     title: "Fast React Pizza Co.",
-    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+    image: FastReactPizza,
     description:
       "Fast React Pizza Co.: Vite and React-powered app for seamless pizza ordering with a user-friendly interface and real-time updates.",
     demolink:
@@ -63,7 +68,7 @@ const cardData = [
   {
     id: 6,
     title: "Workout-Timer",
-    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+    image: Timer,
     description:
       "React-based Workout Timer: Real-time clock, sound toggling, personalized routines adapting to the time of day.",
     demolink:
