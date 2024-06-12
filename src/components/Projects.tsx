@@ -7,6 +7,7 @@ import {
   Text,
   Title,
   Card,
+  Anchor,
 } from "@mantine/core";
 import ProjectsBgImg from "../assets/Works.svg";
 import Scroll from "../assets/Scroll.svg";
@@ -16,39 +17,57 @@ import { IconChevronLeft, IconChevronRight } from "@tabler/icons-react";
 const cardData = [
   {
     id: 1,
-    title: "Norway Fjord Adventures",
+    title: "Travel List",
     image:
       "https://raw.githubusercontent.com/mantinedev/mantine/master/.demo/images/bg-8.png",
     description:
-      "With Fjord Tours you can explore more of the magical fjord landscapes with tours and activities on and around the fjords of Norway",
+      "React Travel Packing List: Organize items by input, description, or packed status. Streamline travel preparation with ease and efficiency.",
+    demolink:
+      "https://665aae008484c0fa14e45075--incredible-kashata-c38611.netlify.app/",
   },
   {
     id: 2,
-    title: "Beautiful Beaches",
+    title: "Eat-n-split",
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e",
     description:
-      "Discover the most beautiful beaches in the world with our exclusive tours",
+      "React-powered Eat and Split app: Easily split bills, track expenses, and manage shared costs effortlessly with friends.",
+    demolink: "https://zingy-arithmetic-fbd779.netlify.app/?",
   },
   {
     id: 3,
-    title: "Mountain Hiking",
+    title: "ForeCastify",
     image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0",
     description:
-      "Join us for an unforgettable hiking experience in the most scenic mountains",
+      "A simple weather application built with React that enables users to check the weather forecast for specific locations.s",
+    demolink:
+      "https://659531ff0f70d883df99e866--tranquil-halva-ce5a42.netlify.app",
   },
   {
     id: 4,
-    title: "City Exploration",
+    title: "FlickPicks",
     image: "https://images.unsplash.com/photo-1491553895911-0055eca6402d",
     description:
-      "Explore the hidden gems of the world's most fascinating cities",
+      "Discover films matching your taste with FlickPicks, a React app for movie recommendations, details, and saving favorites.",
+    demolink:
+      "https://6596cebd993dc500728433ac--endearing-snickerdoodle-21afbe.netlify.app",
   },
   {
     id: 5,
-    title: "Cultural Heritage",
+    title: "Fast React Pizza Co.",
     image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
     description:
-      "Immerse yourself in the rich cultural heritage of various regions",
+      "Fast React Pizza Co.: Vite and React-powered app for seamless pizza ordering with a user-friendly interface and real-time updates.",
+    demolink:
+      "https://665aaeb2c001c3fda3e438f6--incredible-kashata-c38611.netlify.app/",
+  },
+  {
+    id: 6,
+    title: "Workout-Timer",
+    image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e",
+    description:
+      "React-based Workout Timer: Real-time clock, sound toggling, personalized routines adapting to the time of day.",
+    demolink:
+      "https://65a6769cc7771a00a17b1897--calm-taiyaki-837093.netlify.app/",
   },
 ];
 
@@ -132,17 +151,20 @@ const Projects: React.FC = () => {
                 <Text c={"#98FAEC"}>{"</h>"} </Text>
               </Box>
 
-              <Box
-                pt={8}
-                style={{
-                  textDecoration: "underline",
-                  cursor: "pointer",
-                  textAlign: "center",
-                }}
-                c={"#98FAEC"}
-              >
-                View Website
-              </Box>
+              <Anchor href={currentCard.demolink}>
+                <Text
+                  pt={8}
+                  style={{
+                    textDecoration: "underline",
+                    cursor: "pointer",
+                    textAlign: "center",
+                  }}
+                  c={"#98FAEC"}
+                >
+                  {" "}
+                  View Website
+                </Text>
+              </Anchor>
             </Card>
             <Box
               onClick={handleNext}
