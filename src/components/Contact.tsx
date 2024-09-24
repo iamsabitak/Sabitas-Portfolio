@@ -52,7 +52,7 @@ const Contact: React.FC = () => {
           >
             Send Me A Message
           </Text>
-          <form>
+          <form action="https://formspree.io/f/mrbzwjqa" method="POST">
             <Flex direction={"column"} mt={100}>
               <Flex gap={175}>
                 <TextInput
@@ -63,6 +63,7 @@ const Contact: React.FC = () => {
                     </Text>
                   }
                   type="name"
+                  name="name"
                   w={420}
                   styles={{
                     input: {
@@ -85,6 +86,7 @@ const Contact: React.FC = () => {
                     </Text>
                   }
                   type="email"
+                  name="email"
                   w={420}
                   styles={{
                     input: {
@@ -109,6 +111,7 @@ const Contact: React.FC = () => {
                     Message *
                   </Text>
                 }
+                name="message"
                 styles={{
                   input: {
                     backgroundColor: "#292F36",
@@ -136,6 +139,7 @@ const Contact: React.FC = () => {
                     justifyContent: "center",
                     alignItems: "center",
                   }}
+                  type="submit"
                 >
                   <Text
                     fw={500}
