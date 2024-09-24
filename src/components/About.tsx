@@ -19,6 +19,7 @@ const About: React.FC = () => {
       direction={"column"}
       c={"#FFFFFF"}
       style={{ fontFamily: "monospace" }}
+      mb={"-0.6rem"}
     >
       <BackgroundImage src={AboutBgImg} p={3}>
         <Center>
