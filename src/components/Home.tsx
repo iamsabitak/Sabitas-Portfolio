@@ -132,7 +132,12 @@ const Home = () => {
               p={"6px 7px 0px 7px"}
               style={{ borderRadius: "50rem", cursor: "pointer" }}
             >
-              <IconMail color="#12F7D6" />
+              <Anchor
+                href="mailto:sabitakhadka091@gmail.com"
+                style={{ textDecoration: "none" }}
+              >
+                <IconMail color="#12F7D6" />
+              </Anchor>
             </Box>
           </Flex>
         </Flex>
