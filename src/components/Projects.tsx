@@ -36,7 +36,7 @@ const cardData = [
     image: EatnSplit,
     description:
       "React-powered Eat and Split app: Easily split bills, track expenses, and manage shared costs effortlessly with friends.",
-    demolink: "https://zingy-arithmetic-fbd779.netlify.app/?",
+    demolink: "https://admirable-scone-dfee46.netlify.app",
   },
   {
     id: 3,
